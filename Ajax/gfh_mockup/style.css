@@ -1,0 +1,63 @@
+
+body {
+  margin: 1em;
+}
+
+.ui-card {
+  width: 300px;
+  background-color: mistyrose;
+  -webkit-box-shadow: 10px 10px 43px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 43px -1px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 43px -1px rgba(0,0,0,0.75);
+  transition: .4s;
+}
+
+.ui-card:hover {
+  transform: translateY(0.3em);
+}
+
+.ui-card header {
+  line-height: 2em;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.likes,
+.created-at {
+  float: right;
+}
+
+.content {
+  padding: 0.5em;
+}
+
+.image {
+  position: relative;
+}
+
+.star {
+  -webkit-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: 3em;
+  color: yellow;
+  cursor: pointer;
+  opacity: 0;
+  transition: .4s;
+}
+
+.image:hover .star{
+  opacity: 1;
+}
+
+.cards > div {
+  display: inline-block;
+  margin-right: 15px;
+}

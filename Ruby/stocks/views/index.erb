@@ -1,0 +1,14 @@
+
+<ul>
+  <% @languages.each do |lang| %>
+
+    <li><a href="#"><%= lang %></a></li>
+
+  <% end %>
+</ul>
+
+<form action="/stock">
+  <label for="stock">stock name</label>
+  <input id="stock" name="stock" type="text">
+  <button>get price</button>
+</form>

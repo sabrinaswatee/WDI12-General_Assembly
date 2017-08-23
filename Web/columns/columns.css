@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.info {
+  border: 5px solid black;
+  width: 100px;
+}
+
+span {
+  display: inline-block;
+  width: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flip a Coin</title>
+    <style>
+      body {
+        text-align: center;
+        background: black;
+        color: white;
+        font-family: helvetica;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>It's Time to Flip a Coin!</h2>
+    <img id = "clickImage" src = "http://imageshack.com/a/img907/7008/55qYEp.gif">
+    <p>Please click on the coin!</p>
+    <h3 id = "tallyTotal"> </h3>
+
+    <script>
+      var tallyHeads = 0;
+      var tallyTails = 0;
+
+      //find image and print location <h3>
+      var clickInput = document.getElementById("clickImage");
+      var tally = document.getElementById("tallyTotal");
+
+      //flipped
+      var coinFlip = function () {
+        return (Math.floor(Math.random() * 2) === 0) ? "heads" : "tails";
+      };
+
+      console.log(coinFlip());
+
+      //specifying task
+      var task = function () {
+        if (coinFlip() === "heads") {
+          tallyHeads++;
+        } else {
+          tallyTails++;
+        };
+        if (tallyHeads % 5 == 0) {
+          console.log('WINNER!');
+        };
+        return tally.innerHTML = "You have flipped " + tallyHeads + " heads and " + tallyTails + " tails."
+      };
+
+      //listen to click
+      clickInput.addEventListener("click", task);
+
+      console.log(tallyHeads);
+    </script>
+  </body>
+</html>

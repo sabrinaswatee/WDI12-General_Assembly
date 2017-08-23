@@ -1,0 +1,44 @@
+body {
+  /*margin: auto;*/
+}
+
+h2 {
+  color: grey;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4 {
+  color: blue;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+p {
+  color: grey;
+  width: 980px;
+  font-size: 14px;
+}
+
+nav img {
+  border: 4px solid #c7c4c4;
+  padding: 1px;
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 0;
+  color: grey;
+}
+
+.large {
+  width: 940px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  margin-top: 0;
+}

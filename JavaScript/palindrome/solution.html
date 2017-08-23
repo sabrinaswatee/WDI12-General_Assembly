@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <h1>Open your console</h1>
+    <script>
+      function palindrome(str) {
+        var stripped = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").toLowerCase();
+        var reversed = stripped.split("").reverse().join("");
+        return reversed == stripped;
+      }
+    </script>
+  </body>
+</html>

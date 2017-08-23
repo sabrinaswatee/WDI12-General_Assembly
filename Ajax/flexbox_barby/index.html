@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flexbox demo</title>
+
+    <style>
+      .grill {
+        height: 300px;
+        display: flex;
+        border: 5px solid black;
+        flex-direction: row; /* default */
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .grill > div {
+        /* flex-grow: 1; /* default */
+        /*text-align: center;*/
+        /*width: 50%;*/
+        width: 100px;
+      }
+
+      .plum {
+        background-color: plum;
+      }
+      .tomato {
+        background-color: tomato;
+        /*flex-grow: 1;*/
+      }
+      .chocolate {
+        background-color: chocolate;
+      }
+      .dark-olive-green {
+        background-color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="grill">
+      <div class="plum">plum</div>
+      <div class="tomato">tomato</div>
+      <div class="dark-olive-green">dark olive green</div>
+      <div class="chocolate">chocolate</div>
+    </div>
+
+  </body>
+</html>

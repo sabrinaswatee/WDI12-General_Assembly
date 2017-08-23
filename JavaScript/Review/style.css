@@ -1,0 +1,12 @@
+div {
+  background-color: yellow;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  /*float: left;*/
+  display: inline-block;
+}
+
+div:nth-child(2) {
+  margin-left: -4px;
+}

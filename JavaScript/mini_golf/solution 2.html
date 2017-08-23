@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="minigolf.js"></script>
+  </head>
+
+  <body>
+    <h1>Open your console</h1>
+
+    <script>
+      var bobScores = [3, 2, 6, 11, 9, 2, 6, 9, 10];
+      var jimboScores = [5, 12, 9, 22, 13, 7, 16, 10, 11];
+      var fishScores = [2, 2, 4, 5, 4, 3, 6, 4, 1];
+
+      var bobTotal = bobScores.reduce(function(a, b) {
+        return a + b;
+      }, 0)
+
+      console.log(bobTotal);
+
+      function totalScores(scoreCard) {
+        var coursePars = [3, 4, 5, 5, 3, 3, 4, 3, 5];
+        var totalScore = 0;
+        var overPars = 0;
+        for (var i = 0; i < scoreCard.length; i++) {
+          if (scoreCard[i] < coursePars[i]) {
+            totalScore -= coursePars[i] - scoreCard[i];
+          } else if (scoreCard[i] > coursePars[i]) {
+            overPars += scoreCard[i] - coursePars[i];
+            totalScore += scoreCard[i] - coursePars[i];
+          }
+        }
+        return [totalScore, overPars];
+      }
+
+      totalScores(coursePars) - totalScores(jimboScores );
+
+      console.log(totalScores(bobScores));
+      console.log(totalScores(jimboScores));
+      console.log(totalScores(fishScores));
+    </script>
+  </body>
+</html>
